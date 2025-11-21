@@ -4,6 +4,10 @@ body {
      background-attachment: fixed;
 }
 
+.container {
+    display: flex;
+}
+
 .image { 
     flex: 1;
 }
