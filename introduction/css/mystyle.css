@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-    color: navy;
-    margin-left: 20px;
+    color: rgb(94, 94, 255);
+    text-align: center;
 }
 
 p {
     color: white;
     font-size: 20px;
-    margin-left: 400PX;
+    text-align: center;
 }
