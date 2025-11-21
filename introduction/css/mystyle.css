@@ -10,11 +10,9 @@ body {
 }
 
 /* LEFT SIDE */
-.image {
-    flex: 1;
-}
-
 .image img {
+    display: flex;
+    flex:  1;
     width: 650px;
     height: 750px;
 }
