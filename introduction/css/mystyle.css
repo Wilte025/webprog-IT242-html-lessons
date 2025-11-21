@@ -1,5 +1,5 @@
 body {
-    background-image: url"blob:https://gemini.google.com/ef916232-1ff8-446c-9fc1-dd7795816f1b";
+    background-image: url("blob:https://gemini.google.com/ef916232-1ff8-446c-9fc1-dd7795816f1b");
      background-size: cover; 
      background-attachment: fixed;
 }
