@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    color: rgb(94, 94, 255);
+    color: white;
+    font-size: 20px;
     text-align: center;
 }
 
