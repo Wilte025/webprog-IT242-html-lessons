@@ -4,6 +4,21 @@ body {
      background-attachment: fixed;
 }
 
+.image { 
+    flex: 1;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.texts {
+    flex: 1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
 h1 {
     color: white;
     font-size: 20px;
