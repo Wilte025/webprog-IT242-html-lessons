@@ -1,12 +1,12 @@
 .container {
-   display: grid;
+  display: grid;
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: 500px auto auto;
   grid-template-rows: 600px 600px 600px;
   background-color: rgb(170, 0, 0);
   padding: 50px;
-  gap: 5px;
+  gap: 50px;
 }
 .container div {
   background-color: #f1f1f1;
