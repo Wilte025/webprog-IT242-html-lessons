@@ -2,12 +2,11 @@
   display: grid;
   column-gap: 50px;
   row-gap: 50px;
-  grid-template-columns: 600px auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 600px auto auto;
   background-color: rgb(170, 0, 0);
   padding: 50px;
   gap: 50px;
-  container
 }
 .container div {
   background-color: #f1f1f1;
