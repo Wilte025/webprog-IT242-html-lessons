@@ -3,16 +3,8 @@
   border-radius: 10px;
 }
 
-.AboutMe {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 .card {
-  background: linear-gradient(135deg, #1e1e2f, #3a3a8f);
+  background: linear-gradient(135deg, #2d2d66, #3a3a8f);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
@@ -27,7 +19,7 @@
 }
 
 .navbar {
-  background: linear-gradient(90deg, #1e1e2f, #3a3a8f);
+  background: linear-gradient(90deg, #2d2d66, #3a3a8f);
   padding: 20px;
   display: flex;
   justify-content: space-between;
