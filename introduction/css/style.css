@@ -52,3 +52,37 @@
   border-radius: 10%;
   object-fit: cover;
 }
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .navbar {
+  background-color: #000;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark h2 {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+#themeToggle {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#themeToggle:hover {
+  background-color: white;
+  color: #1e1e2f;
+}
