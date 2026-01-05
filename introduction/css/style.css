@@ -49,6 +49,6 @@
 
 .profile img {
   width: 250px;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
 }
