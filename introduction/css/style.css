@@ -11,12 +11,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.AboutMe:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.Education {
+.card {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
@@ -24,59 +19,36 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Education:hover{
+.card:hover{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.Course {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.navbar {
+  background-color: #1e1e2f;
+  padding: 20px;
+  text-align: left;
 }
 
-.Course:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+.nav-title {
+  color: white;
+  font-size: 26px;
 }
 
-.ItExperience {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.subtitle {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: normal;
 }
 
-.ItExperience:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.Hobbies {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.Hobbies:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.Goals {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.Goals:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+.profile img {
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
 }
