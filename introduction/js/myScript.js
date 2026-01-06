@@ -1,18 +1,23 @@
-const toggleBtn = document.getElementById("themeToggle");
+function showSection(sectionId) {
+    // 1. Hide all sections
+    const sections = document.querySelectorAll('.tab-content');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+    // 2. Remove 'active' class from all buttons
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
 
-  toggleBtn.textContent = document.body.classList.contains("dark")
-    ? "☀️ Light Mode"
-    : "🌙 Dark Mode";
-});
+    // 3. Show the clicked section
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.classList.add('active');
+    }
 
-const cards = document.querySelectorAll(".expandable");
-
-cards.forEach(card => {
-  card.addEventListener("click", () => {
-    cards.forEach(c => c.classList.remove("active"));
-    card.classList.add("active");
-  });
-});
+    // 4. Highlight the clicked button
+    const clickedBtn = event.currentTarget;
+    clickedBtn.classList.add('active');
+}
