@@ -1,111 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Personal Profile | Wilte Dela Cruz</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile - Wilte V. Dela Cruz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-  <header class="navbar">
-    <h1 class="nav-title"><b>My Personal Profile</b></h1>
-    <button id="themeToggle">🌙 Dark Mode</button>
-  </header>
+    <nav class="top-nav">
+        <h1>My Personal Profile</h1>
+    </nav>
 
-  <h3 class="subtitle">About Wilte V. Dela Cruz</h3>
+    <div class="container">
+        <div class="floating-nav">
+            <button class="nav-btn active" onclick="showSection('about')">About Me</button>
+            <button class="nav-btn" onclick="showSection('education')">Education</button>
+            <button class="nav-btn" onclick="showSection('course')">Course</button>
+            <button class="nav-btn" onclick="showSection('experience')">IT Experience</button>
+            <button class="nav-btn" onclick="showSection('hobbies')">Hobbies</button>
+            <button class="nav-btn" onclick="showSection('goals')">Goals</button>
+            <button class="nav-btn" onclick="showSection('gallery')">Picture Gallery</button>
+            <button class="nav-btn" onclick="showSection('resources')">Resources</button>
+        </div>
 
-    <div class="profile">
-      <img src="https://i.pinimg.com/1200x/ab/d6/5b/abd65b6c3b414e25be25d4bfd28fe401.jpg" alt="Spider Man">
+        <main class="content-card">
+            
+            <section id="about" class="tab-content active">
+                <h2>All About Wilte V. Dela Cruz</h2>
+                <p>Hello! I'm Wilte V. Dela Cruz, a passionate and driven individual with a strong interest in information technology and web development. I am dedicated to continuous learning and personal growth, always seeking new challenges and opportunities to expand my knowledge...</p>
+            </section>
+
+            <section id="education" class="tab-content">
+                <h2>Educational Background</h2>
+                <div class="timeline-item">
+                    <h3><i class="fas fa-user-graduate"></i> College</h3>
+                    <p class="school-name">University Name</p>
+                    <p class="date">2022 - Present</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+                <div class="timeline-item">
+                    <h3><i class="fas fa-school"></i> Senior High School</h3>
+                    <p class="school-name">School Name</p>
+                    <p class="date">2020 - 2022</p>
+                    <p>STEM Strand</p>
+                </div>
+            </section>
+
+            <section id="experience" class="tab-content">
+                <h2>IT Experience & Skills</h2>
+                <div class="grid-container">
+                    <div class="info-box">
+                        <i class="fas fa-code"></i>
+                        <h3>Front-End Development</h3>
+                        <div class="tags">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>React</span>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-database"></i>
+                        <h3>Database Management</h3>
+                        <div class="tags">
+                            <span>MySQL</span> <span>SQL</span> <span>Query Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resources" class="tab-content">
+                <h2>Resources & Tools</h2>
+                <div class="resource-grid">
+                    <div class="res-box chatgpt"><i class="fas fa-robot"></i> <p>ChatGPT</p></div>
+                    <div class="res-box gemini"><i class="fas fa-sparkles"></i> <p>Gemini</p></div>
+                    <div class="res-box figma"><i class="fab fa-figma"></i> <p>Figma</p></div>
+                    <div class="res-box github"><i class="fab fa-github"></i> <p>GitHub</p></div>
+                </div>
+            </section>
+
+            <section id="gallery" class="tab-content">
+                <h2>Picture Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="photo-placeholder">Travel Adventure</div>
+                    <div class="photo-placeholder"></div>
+                    <div class="photo-placeholder"></div>
+                    <div class="photo-placeholder"></div>
+                </div>
+            </section>
+
+        </main>
     </div>
 
-<div class="cards-container">
-    <div class="card expandable About">
-        <div class="card-front">
-            <img src="https://images.gmanews.tv/webpics/2024/03/karina_2024_03_06_15_17_46.jpg" alt="About Icon">
-            <h2>About Me</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li>I am a BSIT student currently studying at Asia Pacific College.</li>
-                <li>I have basic knowledge of HTML, CSS, Python, and Java.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card expandable Education">
-        <div class="card-front">
-            <img src="https://www.avanse.com/blogs/images/10feb-blog-2023.webp" alt="Education Icon">
-            <h2>Education</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li><strong>Senior High School:</strong> Mataas na Paaralang Neptali A. Gonzales</li>
-                <li><strong>College:</strong> Asia Pacific College</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card expandable Course">
-        <div class="card-front">
-            <img src="https://www.ciit.edu.ph/wp-content/uploads/2021/04/set-office-supplies-1.jpg" alt="Course Icon">
-            <h2>Course</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li>Bachelor of Science in Information Technology (BSIT)</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card expandable ItExperience">
-        <div class="card-front">
-            <img src="https://www.callcentrehelper.com/images/stories/2020/03/laptop-turns-into-book-760.jpg" alt="ItExperience Icon">
-            <h2>IT Experience</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li>HTML & CSS</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card expandable Hobbies">
-        <div class="card-front">
-            <img src="https://media.istockphoto.com/id/1560833158/photo/game-controller-with-purple-lit-keyboard-amidst-various-wireless-devices.jpg?s=612x612&w=0&k=20&c=eOYotPVhXSiFkrSLHsDjpUENG3ev7bnbt-iK6RS6KAM=" alt="Hobbies Icon">
-            <h2>Hobbies</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li>Playing Games</li>
-                <li>Watching Anime and K-Dramas</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card expandable Goals">
-        <div class="card-front">
-            <img src="https://docvita.com/wp-content/uploads/2023/05/life-goals.webp" alt="Goals Icon">
-            <h2>Goals</h2>
-        </div>
-
-        <div class="card-content">
-            <ul>
-                <li>To have a fulfilling life</li>
-                <li>To be financially stable</li>
-            </ul>
-        </div>
-    </div>
-</div>    
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
